@@ -26,12 +26,16 @@
                     <div class="cara"></div>
                 </div>
                 <div class="kolonka-prihlaseni">
-                    <h2><i class="fa-solid fa-user"></i>Uživatelské heslo</h2>
-                    <input type="password" placeholder="Zadejte uživatelské heslo" class="input" id="password" required>
+                    <h2><i class="fa-solid fa-lock"></i>Uživatelské heslo</h2>
+                    <div class="password-container">
+                        <input type="password" placeholder="Zadejte uživatelské heslo" class="input" id="password"
+                            required>
+                        <i class="fa-solid fa-eye show-password" onclick="togglePasswordVisibility()"></i>
+                    </div>
                     <div class="cara"></div>
                 </div>
                 <div class="kolonka-prihlaseni">
-                    <button class="button" onclick="login()"><i class="fa-solid fa-unlock"></i>Přihlásit se</button>
+                    <button class="button" onclick="login()"><i class="fa-solid fa-unlock"></i> Přihlásit se</button>
                 </div>
                 <div class="dolni-text">
                     <h2>Pokud by byly problémy, kontaktuj RektByMineR.</h2>
