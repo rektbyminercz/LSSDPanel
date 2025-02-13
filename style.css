@@ -72,6 +72,14 @@ body {
     text-align: center;
 }
 
+.kolonka-prihlaseni h2 i {
+    margin-right: 10px;
+}
+
+.kolonka-prihlaseni .button i {
+    margin-right: 10px;
+}
+
 .cara {
     width: auto;
     height: 5px;
@@ -87,6 +95,12 @@ body {
     border: 4px solid black;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.kolonka-prihlaseni button:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 0.5s;
 }
 
 .dolni-text {
