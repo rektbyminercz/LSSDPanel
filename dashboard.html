@@ -11,22 +11,22 @@
 <body>
     <div class="container">
         <div class="velke-info">
-            <div class="nazev" id="player_and_admin">
+            <div class="nazev">
                 <h1>Los Santos Sheriff <div class="zluty-napis">Department</div>
                 </h1>
             </div>
-            <div class="uzivatel" id="player_and_admin">
+            <div class="uzivatel">
                 <div class="jmeno-foto">
                     <img src="https://static.wikia.nocookie.net/rp-projectcriminal-revange/images/8/82/LSSDlogo.png/revision/latest/scale-to-width-down/350?cb=20230411181141&path-prefix=th"
                         alt="Logo">
                     <h2>Jméno Příjmení</h2>
                 </div>
-                <h2 id="hodnost">Aktuální hodnost</h2>
+                <h2 id="hodnost">Aktuální Hodnost</h2>
             </div>
             <div class="nabidka">
                 <h2>Main Nabídka</h2>
             </div>
-            <div class="funkce-nabidka" id="player_and_admin">
+            <div class="funkce-nabidka">
                 <a href="">
                     <h3>Patroly/Redaty</h3>
                 </a>
@@ -40,10 +40,10 @@
                     <h3>Odhlášení</h3>
                 </a>
             </div>
-            <div class="nabidka pouzeproadminy">
+            <div class="nabidka" id="">
                 <h2>Administrace</h2>
             </div>
-            <div class="funkce-nabidka pouzeproadminy">
+            <div class="funkce-nabidka" id="">
                 <a href="">
                     <h3>Uživatelé</h3>
                 </a>
@@ -60,16 +60,6 @@
             <div class="spodek-navbaru"></div>
         </div>
     </div>
-
-    <script>
-        // Příklad jak zobrazit obsah pouze pro administrátory
-        const isAdmin = true; // Změňte na false pro testování
-        if (isAdmin) {
-            document.querySelectorAll('.pouzeproadminy').forEach(el => el.style.display = 'flex');
-        } else {
-            document.querySelectorAll('.pouzeproadminy').forEach(el => el.style.display = 'none');
-        }
-    </script>
 </body>
 
 </html>

@@ -28,14 +28,6 @@ function login() {
         return;
     }
 
-    // Simulace ověření uživatele
-    if (username === 'admin' && password === 'password') {
-        // Přesměrování na dashboard pro administrátory
-        window.location.href = 'dashboard.html?role=admin';
-    } else if (username === 'player' && password === 'password') {
-        // Přesměrování na dashboard pro hráče
-        window.location.href = 'dashboard.html?role=player';
-    } else {
-        errorMessage.style.display = 'block';
-    }
+    // Přesměrování na dashboard bez ověřování
+    window.location.href = 'dashboard.html';
 }
