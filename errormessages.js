@@ -29,10 +29,13 @@ function login() {
     }
 
     // Simulace ověření uživatele
-    if (username !== 'admin' || password !== 'password') {
-        errorMessage.style.display = 'block';
+    if (username === 'admin' && password === 'password') {
+        // Přesměrování na dashboard pro administrátory
+        window.location.href = 'dashboard.html?role=admin';
+    } else if (username === 'player' && password === 'password') {
+        // Přesměrování na dashboard pro hráče
+        window.location.href = 'dashboard.html?role=player';
     } else {
-        // Přesměrování na dashboard nebo jinou stránku
-        window.location.href = 'dashboard.html';
+        errorMessage.style.display = 'block';
     }
 }

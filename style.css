@@ -104,12 +104,22 @@ body {
     color: black;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    /* Přidání pro zobrazení šipky */
 }
 
 .kolonka-prihlaseni button:hover {
     background-color: black;
     color: white;
     transform: scale(1.05);
+}
+
+.kolonka-prihlaseni button:hover::after {
+    content: '  ➪';
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    color: white;
 }
 
 .password-container {

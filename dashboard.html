@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSSD | InfoPanel</title>
+    <link rel="stylesheet" href="panel.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="velke-info">
+            <div class="nazev" id="player_and_admin">
+                <h1>Los Santos Sheriff <div class="zluty-napis">Department</div>
+                </h1>
+            </div>
+            <div class="uzivatel" id="player_and_admin">
+                <div class="jmeno-foto">
+                    <img src="https://static.wikia.nocookie.net/rp-projectcriminal-revange/images/8/82/LSSDlogo.png/revision/latest/scale-to-width-down/350?cb=20230411181141&path-prefix=th"
+                        alt="Logo">
+                    <h2>Jméno Příjmení</h2>
+                </div>
+                <h2 id="hodnost">Aktuální hodnost</h2>
+            </div>
+            <div class="nabidka">
+                <h2>Main Nabídka</h2>
+            </div>
+            <div class="funkce-nabidka" id="player_and_admin">
+                <a href="">
+                    <h3>Patroly/Redaty</h3>
+                </a>
+                <a href="" class="active">
+                    <h3>Informace</h3>
+                </a>
+                <a href="">
+                    <h3>Nastavení</h3>
+                </a>
+                <a href="index.html">
+                    <h3>Odhlášení</h3>
+                </a>
+            </div>
+            <div class="nabidka pouzeproadminy">
+                <h2>Administrace</h2>
+            </div>
+            <div class="funkce-nabidka pouzeproadminy">
+                <a href="">
+                    <h3>Uživatelé</h3>
+                </a>
+                <a href="">
+                    <h3>Logy</h3>
+                </a>
+                <a href="">
+                    <h3>Status</h3>
+                </a>
+                <a href="">
+                    <h3>Statistiky</h3>
+                </a>
+            </div>
+            <div class="spodek-navbaru"></div>
+        </div>
+    </div>
+
+    <script>
+        // Příklad jak zobrazit obsah pouze pro administrátory
+        const isAdmin = true; // Změňte na false pro testování
+        if (isAdmin) {
+            document.querySelectorAll('.pouzeproadminy').forEach(el => el.style.display = 'flex');
+        } else {
+            document.querySelectorAll('.pouzeproadminy').forEach(el => el.style.display = 'none');
+        }
+    </script>
+</body>
+
+</html>
